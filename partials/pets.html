@@ -1,0 +1,14 @@
+<a ui-sref="newPet" class="btn-primary btn-lg nodecoration">Add New Pet</a>
+<table class="table pettable">
+    <tr>
+        <td><h3>Pets List</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="pet in pets" ng-init="pet.id = $index">
+        <td>{{pet.name}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewPet({id:$index})">View</a>
+            <a class="btn btn-danger"  ng-click="deletePet(pet)">Delete</a>
+        </td>
+    </tr>
+</table>

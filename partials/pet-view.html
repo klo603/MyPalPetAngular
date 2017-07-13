@@ -1,0 +1,33 @@
+<table class="table pettable">
+    <tr>
+        <td><h3>Details for {{pet.name}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>{{pet.name}}</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>{{pet.age}}</td>
+    </tr>
+    <tr>
+        <td>Breed</td>
+        <td>{{pet.breed}}</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>${{pet.price}}</td>
+    </tr>
+    <tr>
+        <td>List Date</td>
+        <td>{{pet.list_date}}</td>
+    </tr>
+    <tr>
+        <td>Sale Date</td>
+        <td>{{pet.sale_date}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editPet({id:pet.id})">Edit</a>
+</div>
